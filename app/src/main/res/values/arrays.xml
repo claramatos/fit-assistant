@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_units_options">
+        <item>@string/pref_units_label_metric</item>
+        <item>@string/pref_units_label_imperial</item>
+    </string-array>
+
+    <string-array name="pref_units_values">
+        <item>@string/pref_units_metric</item>
+        <item>@string/pref_units_imperial</item>
+    </string-array>
+
+    <string-array name="activities_array">
+        <item>Walking</item>
+        <item>Running</item>
+        <item>Bicycling</item>
+    </string-array>
+
+    <string-array name="weather_array">
+        <item>Clear</item>
+        <item>Cloudy</item>
+        <item>Foggy</item>
+        <item>Hazy</item>
+        <item>Icy</item>
+        <item>Rainy</item>
+        <item>Snowy</item>
+        <item>Stormy</item>
+        <item>Windy</item>
+    </string-array>
+
+    <string-array name="units_array">
+        <item>m</item>
+        <item>km</item>
+    </string-array>
+</resources>

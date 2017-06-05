@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.fitassistant.activities.EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Label -->
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:text="@string/category_activity_name" />
+
+                <!-- Name field -->
+                <EditText
+                    android:id="@+id/activity_name"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_activity_name"
+                    android:inputType="textCapWords"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_date_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!-- Label -->
+                    <TextView
+                        style="@style/CategoryStyle"
+                        android:text="@string/category_activity_date" />
+
+                    <TextView
+                        android:id="@+id/txt_date"
+                        style="@style/EditorFieldStyle"
+                        android:padding="16dp"
+                        android:text="@string/date_holder" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!-- Label -->
+                    <TextView
+                        style="@style/CategoryStyle"
+                        android:text="@string/category_activity_time" />
+
+                    <TextView
+                        android:id="@+id/txt_time"
+                        style="@style/EditorFieldStyle"
+                        android:padding="16dp"
+                        android:text="@string/time_holder" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Label -->
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:text="@string/category_activity_type" />
+
+                <!-- Activity type drop-down spinner -->
+                <Spinner
+                    android:id="@+id/spinner_type"
+                    style="@style/EditorFieldStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_duration_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!-- Label -->
+                    <TextView
+                        style="@style/CategoryStyle"
+                        android:text="@string/category_activity_duration" />
+
+                    <!-- Duration field -->
+                    <EditText
+                        android:id="@+id/ed_txt_duration"
+                        style="@style/EditorFieldStyle"
+                        android:focusable="false"
+                        android:hint="@string/duration_holder"
+                        android:inputType="time"
+                        android:padding="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!-- Label -->
+                    <TextView
+                        style="@style/CategoryStyle"
+                        android:text="@string/category_activity_distance" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- Distance field -->
+                        <EditText
+                            android:id="@+id/ed_txt_distance"
+                            style="@style/EditorFieldStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/distance_holder"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:maxLines="1"
+                            android:padding="16dp" />
+
+                        <TextView
+                            android:id="@+id/label_weight_units"
+                            style="@style/EditorUnitsStyle"
+                            android:text="m" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/weather_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Label -->
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:text="@string/category_activity_weather" />
+
+                <!-- Weather type dropdown spinner -->
+                <Spinner
+                    android:id="@+id/weather_spinner"
+                    style="@style/EditorFieldStyle"
+                    android:layout_height="48dp"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/save_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/save_activity"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

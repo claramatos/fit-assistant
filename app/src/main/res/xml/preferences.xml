@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:title="@string/pref_name_label"
+        android:key="@string/pref_name_key"
+        android:defaultValue="@string/pref_name_default"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <ListPreference
+        android:defaultValue="@string/pref_units_metric"
+        android:entries="@array/pref_units_options"
+        android:entryValues="@array/pref_units_values"
+        android:key="@string/pref_units_key"
+        android:title="@string/pref_units_label" />
+    <!--
+    <PreferenceCategory
+        android:key="pref_key_storage_settings"
+        android:layout="@layout/preferences_category"
+        android:title="@string/pref_notifications_title">
+        <SwitchPreference
+            android:defaultValue="@string/pref_enable_notifications_default"
+            android:icon="@drawable/ic_directions_walk"
+            android:key="@string/pref_walk_notifications_key"
+            android:summaryOff="@string/pref_enable_notifications_false"
+            android:summaryOn="@string/pref_enable_notifications_true"
+            android:title="@string/pref_walk_notifications_label" />
+
+        <SwitchPreference
+            android:defaultValue="@string/pref_enable_notifications_default"
+            android:icon="@drawable/ic_directions_run"
+            android:key="@string/pref_run_notifications_key"
+            android:summaryOff="@string/pref_enable_notifications_false"
+            android:summaryOn="@string/pref_enable_notifications_true"
+            android:title="@string/pref_run_notifications_label" />
+
+        <SwitchPreference
+            android:defaultValue="@string/pref_enable_notifications_default"
+            android:icon="@drawable/ic_directions_bike"
+            android:key="@string/pref_bike_notifications_key"
+            android:summaryOff="@string/pref_enable_notifications_false"
+            android:summaryOn="@string/pref_enable_notifications_true"
+            android:title="@string/pref_bike_notifications_label" />
+
+    </PreferenceCategory>
+    -->
+</PreferenceScreen>
