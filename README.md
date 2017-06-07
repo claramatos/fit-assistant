@@ -7,3 +7,10 @@ physical activities.
 
 Most of the application features were implemented using the [Google Awareness Api](https://developers.google.com/awareness/) and the 
 [Google Places Api](https://developers.google.com/places/).
+
+
+
+<p align="center">
+    <img src="screens/main_empty.png" alt="Main Screen Empty" width = 250/>
+    <img src="screens/main.png" alt="Main Screen" width = 250/>
+</p>
