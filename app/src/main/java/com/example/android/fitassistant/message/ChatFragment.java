@@ -271,7 +271,7 @@ public class ChatFragment extends Fragment implements SuggestionsRecyclerAdapter
     private void sendMessage(String message) {
         Log.i(TAG, "sendMessage: " + message);
 
-        SimpleTextMessage chatMessage = new SimpleTextMessage(message, SimpleTextMessage.MY_MESSAGE);
+        SimpleTextMessage chatMessage = new SimpleTextMessage(message, SimpleTextMessage.SENT_MESSAGE);
         addMessageToList(chatMessage);
 
         parseMessage(message);
@@ -283,7 +283,7 @@ public class ChatFragment extends Fragment implements SuggestionsRecyclerAdapter
     private void receiveMessage(String message) {
         Log.i(TAG, "receiveMessage: " + message);
 
-        SimpleTextMessage chatMessage = new SimpleTextMessage(message, SimpleTextMessage.OTHER_MESSAGE);
+        SimpleTextMessage chatMessage = new SimpleTextMessage(message, SimpleTextMessage.RECEIVED_MESSAGE);
         addMessageToList(chatMessage);
     }
 
@@ -393,7 +393,7 @@ public class ChatFragment extends Fragment implements SuggestionsRecyclerAdapter
     }
 
     /**
-     * Start gooogle maps app when the user clicks the get direction on the places card
+     * Start google maps app when the user clicks the get direction on the places card
      *
      * @param lat the place to go latitude
      * @param lng the place to go longitude

@@ -5,8 +5,8 @@ package com.example.android.fitassistant.message;
  */
 public class SimpleTextMessage implements iMessage{
 
-    public static final int MY_MESSAGE = 0;
-    public static final int OTHER_MESSAGE = 1;
+    public static final int SENT_MESSAGE = 0;
+    public static final int RECEIVED_MESSAGE = 1;
 
     private int mMessageType;
     private String mContent;

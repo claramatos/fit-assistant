@@ -14,7 +14,7 @@
         android:entryValues="@array/pref_units_values"
         android:key="@string/pref_units_key"
         android:title="@string/pref_units_label" />
-    <!--
+
     <PreferenceCategory
         android:key="pref_key_storage_settings"
         android:layout="@layout/preferences_category"
@@ -44,5 +44,5 @@
             android:title="@string/pref_bike_notifications_label" />
 
     </PreferenceCategory>
-    -->
+
 </PreferenceScreen>

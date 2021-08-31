@@ -211,8 +211,6 @@ public class Utils {
             timeFormat = new SimpleDateFormat(DURATION_FORMAT_DISPLAY);
         }
 
-        //timeFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
-
         return timeFormat.format(new Date(millis));
     }
 

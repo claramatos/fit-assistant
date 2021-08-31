@@ -42,8 +42,6 @@ public class MainActivity extends AppCompatActivity implements ActivitiesFragmen
                     .add(R.id.fragment_container, activitiesFragment, ACTIVITIES_FRAGMENT_TAG)
                     .commit();
         }
-
-
     }
 
     /**
